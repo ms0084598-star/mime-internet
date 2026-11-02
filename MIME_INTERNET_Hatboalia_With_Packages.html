@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MIME INTERNET – Hatboalia Broadband</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
+<style>
+:root{--bg:#f6f9ff;--surface:#fff;--text:#0f1b3d;--muted:#5b6784;--brand:#1a5cff;--brand2:#00c2a8;--line:#e2e8f5;--hero1:#0b2a8a;--hero2:#1a5cff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1020;--surface:#121a31;--text:#eaf0ff;--muted:#9aa8cc;--line:#222d4d;--hero1:#07143f;--hero2:#123bb5;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1020;--surface:#121a31;--text:#eaf0ff;--muted:#9aa8cc;--line:#222d4d;--hero1:#07143f;--hero2:#123bb5;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--brand);text-decoration:none}
+.logo span{color:var(--brand2)}
+nav{display:flex;gap:18px;overflow-x:auto}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;white-space:nowrap;font-size:15px}
+nav a:hover{color:var(--brand)}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:72px 0 80px;position:relative;overflow:hidden}
+.hero svg{position:absolute;right:-40px;top:0;height:100%;opacity:.18}
+.tag{display:inline-block;font-size:12px;letter-spacing:.12em;border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-family:Poppins,sans-serif;font-size:clamp(34px,6vw,56px);line-height:1.15;margin:0 0 14px}
+.hero p{max-width:540px;font-size:18px;opacity:.92;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:700;text-decoration:none;margin:0 10px 10px 0}
+.btn.p{background:var(--brand2);color:#032b25}
+.btn.g{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-36px;position:relative}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;box-shadow:0 6px 20px rgba(10,30,90,.08)}
+.stat b{display:block;font-family:Poppins,sans-serif;font-size:20px;color:var(--brand)}
+.stat small{color:var(--muted)}
+section{padding:60px 0 8px}
+h2{font-size:28px;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;margin-bottom:12px}
+.card .ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{margin:0 0 4px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center}
+.about ul{list-style:none;margin:0;padding:0}
+.about li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.about li:before{content:"✓ ";color:var(--brand2);font-weight:700}
+.person{text-align:center}
+.av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;display:grid;place-items:center;font-weight:700;font-size:24px;margin:0 auto 10px}
+.person .role{color:var(--brand);font-size:14px;font-weight:500}
+.person a{color:var(--text);font-weight:700;text-decoration:none}
+.pay{border-left:4px solid #e2136e}
+.pay.n{border-left-color:#f6921e}
+.num{font-family:Poppins,sans-serif;font-size:24px;font-weight:700;letter-spacing:.03em;margin:6px 0}
+.note{background:rgba(246,146,30,.12);border:1px solid rgba(246,146,30,.4);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:15px}
+.slogans{display:flex;flex-wrap:wrap;gap:10px}
+.slogans span{background:var(--surface);border:1px solid var(--line);padding:8px 16px;border-radius:99px;font-weight:500}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.contact div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.contact small{display:block;color:var(--muted)}
+.contact a{color:var(--brand);font-weight:700;text-decoration:none}
+footer{margin-top:60px;background:var(--surface);border-top:1px solid var(--line);padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:700px){.about{grid-template-columns:1fr}.hero{padding:48px 0 64px}.stat b{font-size:16px}}
+
+/* Additional website sections */
+.btn.dark{background:#10265f;color:#fff}
+.package-card{display:flex;flex-direction:column;min-height:220px}
+.package-card .speed{font-family:Poppins,sans-serif;font-size:25px;color:var(--brand);font-weight:700;margin:8px 0}
+.package-card .package-action{margin-top:auto;padding-top:18px}
+.pill{display:inline-block;border-radius:99px;padding:4px 10px;background:rgba(0,194,168,.12);color:#008b78;font-size:13px;font-weight:700}
+.action-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.copy-btn{border:1px solid var(--line);background:var(--bg);color:var(--brand);padding:7px 12px;border-radius:8px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.map-panel{background:linear-gradient(135deg,rgba(26,92,255,.10),rgba(0,194,168,.12));border:1px solid var(--line);border-radius:16px;padding:24px}
+.support-panel{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:18px;padding:28px}
+.support-panel p{opacity:.9;max-width:620px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{color:var(--muted);margin-bottom:0}
+@media(max-width:700px){
+ header .wrap{height:auto;min-height:60px;align-items:flex-start;flex-direction:column;padding-top:10px;padding-bottom:10px;gap:7px}
+ nav{width:100%;gap:15px;padding-bottom:3px}
+ .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .stat{padding:12px 6px}
+ .num{font-size:20px}
+ .support-panel{padding:22px}
+}
+
+
+/* Refined header and hero: compact branding and a cleaner mobile-first hero */
+.brand-lockup{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:max-content}
+.brand-symbol{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#0c43c7,#12b9dc);box-shadow:0 5px 14px rgba(26,92,255,.22)}
+.brand-symbol svg{width:29px;height:29px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.brand-words{display:flex;flex-direction:column;line-height:1.12}
+.brand-words strong{font-family:Poppins,sans-serif;font-size:18px;letter-spacing:-.7px;color:#123b9c}
+.brand-words em{font-style:normal;color:#08a9a0}
+.brand-words small{font:600 8px Poppins,sans-serif;letter-spacing:1.25px;color:var(--muted);margin-top:4px}
+.hero{isolation:isolate;background:radial-gradient(circle at 78% 45%,rgba(29,147,255,.42),transparent 32%),linear-gradient(118deg,#071c58 0%,#103fae 52%,#1269d8 100%);padding:66px 0 76px;min-height:430px}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,15,55,.2),transparent 70%);pointer-events:none}
+.hero>svg{display:none}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(230px,.8fr);align-items:center;gap:24px;position:relative;z-index:1}
+.hero-copy{max-width:650px;position:relative;z-index:2}
+.tag{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.28);letter-spacing:.09em;font-family:Poppins,sans-serif;font-size:10px}
+.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#31e6c0;margin-right:7px;box-shadow:0 0 0 4px rgba(49,230,192,.13)}
+.hero-kicker{font-size:15px!important;font-weight:600;letter-spacing:.04em;color:#9fe8ff;margin:0 0 8px!important}
+.hero h1{font-size:clamp(36px,5.3vw,59px);letter-spacing:-1.8px;line-height:1.12;margin:0 0 17px}
+.hero h1 span{color:#8de9ef}
+.hero-description{max-width:560px!important;font-size:17px!important;line-height:1.8;opacity:.91;margin:0 0 25px!important}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.hero-actions .btn{margin:0;padding:12px 20px;border-radius:11px}
+.hero-actions .btn.p{background:#19d2b3;color:#063c45;box-shadow:0 8px 20px rgba(0,0,0,.16)}
+.hero-actions .btn.g{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.55)}
+.hero-points{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px;color:rgba(255,255,255,.86);font-size:13px}
+.hero-points b{color:#50e3c4;margin-right:5px}
+.hero-visual{height:280px;position:relative;display:grid;place-items:center;overflow:hidden}
+.visual-glow{position:absolute;width:180px;height:180px;border-radius:50%;background:#18a9ff;filter:blur(55px);opacity:.38}
+.signal-ring{position:absolute;border:1px solid rgba(154,229,255,.35);border-radius:50%;transform:rotate(-22deg)}
+.ring-a{width:180px;height:180px}.ring-b{width:235px;height:235px}.ring-c{width:290px;height:290px}
+.wifi-mark{width:126px;height:126px;border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.19),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.28);box-shadow:0 18px 55px rgba(0,0,0,.2);display:grid;place-items:center;backdrop-filter:blur(8px);z-index:2}
+.wifi-mark svg{width:100px;fill:none;stroke:#b7f5ff;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 8px rgba(67,220,255,.55))}
+.fiber-line{position:absolute;width:190px;height:2px;background:linear-gradient(90deg,transparent,#8ef8ff,transparent);transform:rotate(-35deg);right:-8px;top:62px;box-shadow:0 0 14px #54dfff}
+.visual-label{position:absolute;bottom:12px;right:5px;font:600 10px Poppins,sans-serif;letter-spacing:2px;color:#d5faff}.visual-label b{color:#3bf0c4}
+@media(max-width:700px){
+ header .wrap{align-items:center;flex-direction:column;gap:9px;padding-top:10px;padding-bottom:7px}
+ .brand-lockup{align-self:flex-start}
+ .brand-symbol{width:38px;height:38px;border-radius:11px}
+ .brand-words strong{font-size:17px}
+ nav{width:100%;gap:17px;padding:5px 0 4px;border-top:1px solid var(--line)}
+ .hero{padding:39px 0 58px;min-height:0}
+ .hero-inner{grid-template-columns:1fr;gap:8px}
+ .hero-copy{max-width:none}
+ .tag{font-size:9px;padding:5px 10px;margin-bottom:17px}
+ .hero-kicker{font-size:14px!important}
+ .hero h1{font-size:clamp(34px,9vw,47px);letter-spacing:-1.1px;margin-bottom:13px}
+ .hero-description{font-size:16px!important;line-height:1.75;margin-bottom:20px!important}
+ .hero-actions{gap:9px}
+ .hero-actions .btn{padding:11px 15px;font-size:14px}
+ .hero-points{gap:8px 15px;margin-top:18px;font-size:12px}
+ .hero-visual{height:145px;margin-top:3px}
+ .wifi-mark{width:86px;height:86px;border-radius:25px}
+ .wifi-mark svg{width:70px}
+ .ring-a{width:115px;height:115px}.ring-b{width:165px;height:165px}.ring-c{width:215px;height:215px}
+ .fiber-line{top:24px;right:0;width:120px}
+ .visual-label{bottom:0;right:8px;font-size:8px}
+}
+
+
+
+/* MIME package pricing cards */
+.package-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-top:22px}
+.plan-card{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:21px;box-shadow:0 8px 24px rgba(16,48,110,.06);display:flex;flex-direction:column;min-height:245px;transition:transform .2s ease,box-shadow .2s ease}
+.plan-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(16,48,110,.12)}
+.plan-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#1455db,#12c7b0)}
+.plan-name{font-size:18px;font-weight:700;margin:4px 0 8px}
+.plan-speed{font-family:Poppins,sans-serif;font-weight:700;font-size:25px;line-height:1.25;color:var(--brand);margin:4px 0}
+.plan-speed small{display:block;font:500 12px 'Hind Siliguri',sans-serif;color:var(--muted);margin-top:5px}
+.plan-price{font-family:Poppins,sans-serif;font-size:28px;font-weight:700;color:var(--text);margin:13px 0 2px}
+.plan-price span{font-family:'Hind Siliguri',sans-serif;font-size:13px;font-weight:500;color:var(--muted)}
+.plan-card .plan-cta{margin-top:auto;padding-top:15px}
+.plan-card .plan-cta a{display:block;text-align:center;margin:0;padding:9px 12px;font-size:14px}
+.plan-card.featured{border:2px solid #13bda9;background:linear-gradient(180deg,rgba(0,194,168,.08),var(--surface) 42%)}
+.plan-badge{align-self:flex-start;background:rgba(0,194,168,.13);color:#008b78;border-radius:99px;padding:3px 10px;font-size:12px;font-weight:700}
+@media(max-width:520px){.package-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.plan-card{padding:15px 12px;min-height:225px;border-radius:14px}.plan-name{font-size:16px}.plan-speed{font-size:20px}.plan-price{font-size:23px}.plan-card .plan-cta a{font-size:12px;padding:8px 6px}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo brand-lockup" href="#home" aria-label="MIME INTERNET Hatboalia home"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12.5a18 18 0 0 1 24 0M8.5 17a11.5 11.5 0 0 1 15 0M13 21.5a5 5 0 0 1 6 0"/><circle cx="16" cy="26" r="1.7"/></svg></span><span class="brand-words"><strong>MIME <em>INTERNET</em></strong><small>HATBOALIA • BROADBAND</small></span></a>
+<nav><a href="#about">পরিচিতি</a><a href="#services">সেবা</a><a href="#packages">প্যাকেজ</a><a href="#team">টিম</a><a href="#payment">পেমেন্ট</a><a href="#support">সাপোর্ট</a><a href="#location">লোকেশন</a><a href="#contact">যোগাযোগ</a></nav></div></header>
+
+</div>
+
+
+<div class="hero" id="home">
+<div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+<div class="wrap hero-inner">
+<div class="hero-copy">
+<span class="tag"><span class="live-dot"></span> HATBOALIA • BROADBAND INTERNET SERVICE</span>
+<p class="hero-kicker">আপনার সংযোগ, আমাদের দায়িত্ব</p>
+<h1>Fast Internet.<br><span>Better Connections.</span></h1>
+<p class="hero-description">বাসা, অফিস কিংবা ব্যবসা—দৈনন্দিন অনলাইন কাজের জন্য নির্ভরযোগ্য ব্রডব্যান্ড ইন্টারনেট সেবা পেতে পাশে আছে MIME INTERNET.</p>
+<div class="hero-actions"><a class="btn p" href="tel:01712762426">এখনই কল করুন <span aria-hidden="true">↗</span></a><a class="btn g" href="#services">আমাদের সেবা দেখুন</a></div>
+<div class="hero-points"><span><b>✓</b> Fiber Optic Network</span><span><b>✓</b> Local Technical Support</span></div>
+</div>
+<div class="hero-visual" aria-hidden="true"><div class="visual-glow"></div><div class="signal-ring ring-a"></div><div class="signal-ring ring-b"></div><div class="signal-ring ring-c"></div><div class="wifi-mark"><svg viewBox="0 0 120 100"><path d="M10 35Q60 -5 110 35M25 52Q60 22 95 52M41 69Q60 52 79 69"/><circle cx="60" cy="86" r="6"/></svg></div><div class="fiber-line"></div><span class="visual-label">CONNECTED <b>●</b></span></div>
+</div></div>
+
+<div class="wrap">
+<div class="stats"><div class="stat"><b>Fiber</b><small>অপটিক নেটওয়ার্ক</small></div><div class="stat"><b>Support</b><small>প্রযুক্তিগত সহায়তা</small></div><div class="stat"><b>Trusted</b><small>স্থানীয় সেবা</small></div></div>
+
+<section id="about"><h2>আমাদের সম্পর্কে</h2><p class="sub">About Us</p>
+<div class="about"><div><p>MIME INTERNET একটি আধুনিক ইন্টারনেট সেবা প্রদানকারী প্রতিষ্ঠান। আমরা Hatboalia ও আশপাশের এলাকায় গ্রাহকদের কাছে নির্ভরযোগ্য ব্রডব্যান্ড ইন্টারনেট সেবা পৌঁছে দিতে প্রতিশ্রুতিবদ্ধ।</p><p>আমাদের লক্ষ্য দ্রুতগতির ইন্টারনেট, মানসম্মত সাপোর্ট এবং গ্রাহক সন্তুষ্টি নিশ্চিত করা।</p></div>
+<div class="card"><ul class="about" style="display:block"><li>দ্রুতগতির ইন্টারনেট</li><li>মানসম্মত সাপোর্ট</li><li>গ্রাহক সন্তুষ্টি</li></ul></div></div></section>
+
+<section id="services"><h2>আমাদের সেবাসমূহ</h2><p class="sub">Our Services</p>
+<div class="grid">
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0M2 8.8a15 15 0 0 1 20 0"/><circle cx="12" cy="19" r="1"/></svg></div><h3>Broadband Internet</h3><p>দ্রুতগতির ব্রডব্যান্ড ইন্টারনেট।</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><h3>Fiber Optic Network</h3><p>আধুনিক ফাইবার অপটিক সংযোগ।</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2M3 14h3v5H3zM18 14h3v5h-3z"/></svg></div><h3>Technical Support</h3><p>প্রযুক্তিগত সহায়তা ও সমস্যা সমাধান।</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9H3z"/><path d="M9 20v-6h6v6"/></svg></div><h3>Home &amp; Office</h3><p>বাসা ও অফিসের ইন্টারনেট সংযোগ।</p></div>
+</div>
+<div class="note" style="background:rgba(26,92,255,.08);border-color:rgba(26,92,255,.3)">ইন্টারনেট প্যাকেজ ও সংযোগ এলাকা জানতে নিচের প্যাকেজ তালিকা দেখুন অথবা কল করুন: <b>01712762426</b></div></section>
+
+
+<section id="packages"><h2>ইন্টারনেট প্যাকেজ</h2><p class="sub">MIME INTERNET • Monthly Broadband Plans</p>
+<p>আপনার প্রয়োজন অনুযায়ী পছন্দের প্যাকেজটি বেছে নিন। প্রতিটি প্যাকেজে উল্লেখিত ডাউনলোড ও আপলোড স্পিড দেওয়া হয়েছে।</p>
+<div class="package-grid">
+<article class="plan-card"><span class="plan-badge">Entry Plan</span><h3 class="plan-name">MiME Lite</h3><div class="plan-speed">25 Mbps / 25 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳500<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Plus</h3><div class="plan-speed">27 Mbps / 27 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳525<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Smart</h3><div class="plan-speed">30 Mbps / 30 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳575<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Basic</h3><div class="plan-speed">35 Mbps / 35 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳600<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card featured"><span class="plan-badge">Popular Plan</span><h3 class="plan-name">MiME Standard</h3><div class="plan-speed">45 Mbps / 45 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳650<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Regular</h3><div class="plan-speed">60 Mbps / 60 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳800<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Saver</h3><div class="plan-speed">100 Mbps / 100 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳1,000<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Home Broadband</span><h3 class="plan-name">MiME Economy</h3><div class="plan-speed">130 Mbps / 130 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳1,200<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">For Freelancers</span><h3 class="plan-name">MiME Freelancer</h3><div class="plan-speed">300 Mbps / 150 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳1,350<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+<article class="plan-card"><span class="plan-badge">Premium Plan</span><h3 class="plan-name">MiME Special</h3><div class="plan-speed">160 Mbps / 160 Mbps<small>Download / Upload Speed</small></div><div class="plan-price">৳1,500<span> / মাস</span></div><div class="plan-cta"><a class="btn p" href="tel:01712762426">সংযোগ নিতে কল করুন</a></div></article>
+</div>
+<div class="note" style="background:rgba(26,92,255,.08);border-color:rgba(26,92,255,.3)">নতুন সংযোগ, কভারেজ, বিল পরিশোধ ও প্যাকেজ সম্পর্কে বিস্তারিত জানতে কল করুন: <b><a href="tel:01712762426">01712762426</a></b>।</div>
+</section>
+
+<section id="team"><h2>আমাদের টিম</h2><p class="sub">Our Team</p>
+<div class="grid">
+<div class="card person"><div class="av">Z</div><h3>Md. Zahidul Islam Shepon</h3><div class="role">Owner &amp; Managing Director</div><a href="tel:01712762426">01712762426</a></div>
+<div class="card person"><div class="av">S</div><h3>Md. Shohag Ali</h3><div class="role">Network &amp; Fiber Technician</div><a href="tel:01775999536">01775999536</a></div>
+</div></section>
+
+<section id="payment"><h2>Payment Information</h2><p class="sub">বিল পরিশোধ</p>
+<div class="grid">
+<div class="card pay"><small>Owner Payment Number</small><div class="num">01712552512</div><b>bKash / Nagad</b><div class="action-row"><button class="copy-btn" onclick="copyNumber('01712552512')">নম্বর কপি করুন</button></div></div>
+<div class="card pay n"><small>Technician Payment Number</small><div class="num">01775999536</div><b>bKash / Nagad</b><div class="action-row"><button class="copy-btn" onclick="copyNumber('01775999536')">নম্বর কপি করুন</button></div></div>
+</div>
+<div class="note">⚠️ পেমেন্ট করার আগে নম্বর ও অ্যাকাউন্টের ধরন নিশ্চিত করে নেবেন।</div></section>
+
+<section><h2>আমাদের অঙ্গীকার</h2><p class="sub">Our Promise</p>
+<div class="slogans"><span>Connecting People, Empowering Lives.</span><span>আপনার সংযোগ, আমাদের দায়িত্ব।</span><span>Speed You Can Trust.</span><span>Stay Connected, Stay Ahead.</span><span>নির্ভরযোগ্য ইন্টারনেট, নিরবচ্ছিন্ন পথচলা।</span></div></section>
+
+
+<section id="support"><div class="support-panel">
+<span class="tag">CUSTOMER CARE</span><h2>আমরা আপনার পাশে আছি</h2>
+<p>নতুন সংযোগ, বিল, প্যাকেজ, নেটওয়ার্ক বা টেকনিক্যাল সমস্যায় সরাসরি আমাদের সঙ্গে যোগাযোগ করুন।</p>
+<div class="action-row"><a class="btn p" href="tel:01775999536">টেকনিক্যাল সাপোর্টে কল</a><a class="btn g" href="tel:01712762426">অফিসে কল করুন</a></div>
+</div></section>
+<section id="location"><h2>আমাদের অবস্থান</h2><p class="sub">Find MIME INTERNET</p>
+<div class="map-panel"><h3>Hatboalia, Bangladesh</h3><p>Hatboalia এলাকায় MIME INTERNET-এর সংযোগ ও সেবা সম্পর্কে জানতে যোগাযোগ করুন।</p><a class="btn dark" href="https://www.google.com/maps/search/?api=1&query=Hatboalia%2C%20Bangladesh" target="_blank" rel="noopener">Google Maps-এ দেখুন</a></div>
+</section>
+<section class="faq"><h2>সাধারণ জিজ্ঞাসা</h2><p class="sub">Frequently Asked Questions</p>
+<details><summary>নতুন ইন্টারনেট সংযোগ নিতে কী করতে হবে?</summary><p>আপনার নাম, ঠিকানা ও প্রয়োজনীয় প্যাকেজের তথ্য জানাতে Owner নম্বরে কল করুন। সংযোগের কভারেজ ও খরচ যাচাই করে জানানো হবে।</p></details>
+<details><summary>ইন্টারনেট প্যাকেজ ও মাসিক বিল কীভাবে জানব?</summary><p>বর্তমান প্যাকেজ, স্পিড ও বিলের তথ্য জানতে 01712762426 নম্বরে যোগাযোগ করুন।</p></details>
+<details><summary>ইন্টারনেট সমস্যায় কার সঙ্গে যোগাযোগ করব?</summary><p>টেকনিক্যাল সহায়তার জন্য Technician Md. Shohag Ali-এর নম্বর 01775999536-এ কল করুন।</p></details>
+<details><summary>বিল কোন নম্বরে পরিশোধ করব?</summary><p>পেমেন্টের আগে Owner-এর দেওয়া bKash/Nagad নম্বর 01712552512 অথবা Technician-এর নম্বর 01775999536 নিশ্চিত করে নিন।</p></details>
+</section>
+
+<section id="contact"><h2>যোগাযোগ করুন</h2><p class="sub">Contact Us</p>
+<div class="contact">
+<div><small>Location</small><b>Hatboalia, Bangladesh</b></div>
+<div><small>Owner: Md. Zahidul Islam Shepon</small><a href="tel:01712762426">01712762426</a></div>
+<div><small>Technician: Md. Shohag Ali</small><a href="tel:01775999536">01775999536</a></div>
+<div><small>Technical Support</small><a href="tel:01775999536">01775999536</a></div>
+</div></section>
+</div>
+<footer><div class="wrap">© 2026 MIME INTERNET • Hatboalia • Speed You Can Trust. All Rights Reserved.</div></footer>
+
+<script>
+function copyNumber(number){
+ if(navigator.clipboard && window.isSecureContext){
+ navigator.clipboard.writeText(number).then(()=>alert('নম্বর কপি হয়েছে: '+number)).catch(()=>alert('নম্বরটি কপি করুন: '+number));
+ }else{
+ alert('নম্বরটি কপি করুন: '+number);
+ }
+}
+</script>
+</body>
+</html>
